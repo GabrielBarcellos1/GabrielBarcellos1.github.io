@@ -10,7 +10,7 @@ CSS/SASS
 JAVASCRIPT
 
 ## Link
-**Visualização ao vivo** : https://gabrielbarcellos1.github.io/
+**Visualização ao vivo** : https://gabrielbarcellos1.github.io/Meu-Portifolio/
 
 
 ## Obs
