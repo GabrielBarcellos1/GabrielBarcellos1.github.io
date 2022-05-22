@@ -16,10 +16,21 @@ html {
   background: -webkit-gradient(linear, left top, left bottom, from(#01006b), color-stop(0%, #000211), color-stop(17%, #030026), to(#06002e));
   background: linear-gradient(180deg, #01006b 0%, #000211 0%, #030026 17%, #06002e 100%);
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home .homeName {
-  padding-top: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   text-align: center;
   display: -webkit-box;
@@ -35,7 +46,51 @@ html {
   height: 50vh;
 }
 
-.home .homeName p, .home .homeName h1 {
+.home .homeName .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .homeName .redes a {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+  padding: 2px 20px;
+  border: 2px solid;
+  -o-border-image: linear-gradient(227.91deg, #0b4fb6 0%, #003cff 100%) 1;
+     border-image: linear-gradient(227.91deg, #0b4fb6 0%, #003cff 100%) 1;
+}
+
+.home .homeName .redes a i {
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+
+.home .homeName .redes a p {
+  font-size: 1.2em;
+  padding-top: 5px;
+}
+
+.home .homeName h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 1px;
+}
+
+.home .homeName p {
   color: white;
   text-align: center;
   margin-bottom: 10px;
@@ -131,6 +186,52 @@ html {
   margin-left: 50px;
 }
 
+.about .container .text-about div .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.about .container .text-about div .redes a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  width: 180px;
+  border: 2px solid;
+  -o-border-image: linear-gradient(227.91deg, #0b4fb6 0%, #003cff 100%) 1;
+     border-image: linear-gradient(227.91deg, #0b4fb6 0%, #003cff 100%) 1;
+}
+
+.about .container .text-about div .redes a img {
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+
+.about .container .text-about div .redes a p {
+  font-size: 1.4em;
+  margin-top: 15px;
+  font-family: monospace;
+}
+
+.about .container .text-about div .redes a i {
+  font-size: 1.4em;
+  margin-right: 8px;
+}
+
 .about .container .text-about h2, .about .container .text-about p {
   margin-bottom: 20px;
   color: #ffffff;
@@ -142,7 +243,6 @@ html {
   background: linear-gradient(180deg, #01006b 0%, #000211 0%, #030026 17%, #06002e 100%);
   padding: 100px 0;
   text-align: center;
-  height: auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,27 +277,30 @@ html {
   margin: 30px 60px;
 }
 
-.projetos .container .boxes .box-projetos .box {
-  background-color: #eeeeee;
-  width: 23.1%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 20px 4px;
-  padding: 50px 10px;
+.projetos .container .boxes .box-projetos .projeto {
+  text-align: left;
+  color: white;
+  width: 30%;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
-.projetos .container .boxes .box-projetos .barber-shop {
-  padding: 0;
-  margin: 10px;
-  background: none;
-}
-
-.projetos .container .boxes .box-projetos .barber-shop a {
-  text-decoration: none;
-}
-
-.projetos .container .boxes .box-projetos .barber-shop img {
+.projetos .container .boxes .box-projetos .projeto img {
   width: 100%;
+  margin-bottom: 10px;
+}
+
+.projetos .container .boxes .box-projetos .projeto h3, .projetos .container .boxes .box-projetos .projeto p {
+  margin-bottom: 10px;
+}
+
+.projetos .container .boxes .box-projetos .projeto a img {
+  padding: 10px 20px;
+  margin-top: 15px;
+  width: 120px;
+  border: 2px solid;
+  -o-border-image: linear-gradient(227.91deg, #106AF2 0%, #00E9FF 100%) 1;
+     border-image: linear-gradient(227.91deg, #106AF2 0%, #00E9FF 100%) 1;
 }
 
 /*HABILIDADES*/

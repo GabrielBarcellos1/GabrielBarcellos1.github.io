@@ -10,6 +10,8 @@ html{
 }
 
 
+
+
 $color-primary: #343436;
 $color-secudary: #121213;
 $color3:#67568c;
@@ -17,18 +19,48 @@ $color3:#67568c;
     background: rgb(1,0,107);
     background: linear-gradient(180deg, rgba(1,0,107,1) 0%, rgba(0,2,17,1) 0%, rgba(3,0,38,1) 17%, rgba(6,0,46,1) 100%);
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     .homeName{ 
-        padding-top: 200px;
-        
+        justify-content: center;
         color: white;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 50vh;
-        
-        p,h1{
+
+        .redes{
+            display: flex;
+            justify-content: center;
+            a{
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                margin: 20px;
+                padding: 2px 20px;
+                border: 2px solid;
+                border-image: linear-gradient(227.91deg,#0b4fb6 0%, #003cff 100%) 1;
+                i{
+                    font-size: 1.2em;
+                    margin-right: 8px;
+                }
+                p{
+                    font-size: 1.2em;
+                    padding-top: 5px;
+                }
+            }
+        }
+        h1{
+           color: white;
+           text-align: center;
+            margin-bottom: 10px;
+            align-items: center;
+            letter-spacing: 1px;
+        }
+        p{
             color: white;
             text-align: center;
             margin-bottom: 10px;
@@ -45,13 +77,15 @@ $color3:#67568c;
             margin: 0 auto;
             
             white-space: nowrap;
+           
             animation:  
-            typing 4s steps(35, end)  ,
+            typing 4s steps(35, end),
             blink-animation .9s step-end
             infinite;
            
         }
         @keyframes typing {
+
             from{ width: 0}
             to { width: 100%}
         }
@@ -90,9 +124,46 @@ $color3:#67568c;
         }
         .text-about{
             margin-left: 50px;
+            
+            div{
+                .redes{
+                    display: flex;
+                    text-align: center;
+                    flex-wrap: wrap;
+                    width: 100%;
+                   
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 20px;
+                        display: flex;
+                        align-items: center;
+                        margin-right: 20px;
+                        width: 180px;
+                        border: 2px solid;
+                        border-image: linear-gradient(227.91deg,#0b4fb6 0%, #003cff 100%) 1;
+                        img{
+                            font-size: 1.2em;
+                            margin-right: 8px;
+                        }
+                        p{
+                            font-size: 1.4em;
+                            margin-top: 15px;
+                            font-family: monospace;
+                        }
+                        i{
+                            font-size: 1.4em;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
             h2,p {
                 margin-bottom: 20px;
                 color: #ffffff;
+
+                
                 
             }
         }
@@ -104,7 +175,6 @@ $color3:#67568c;
     background: linear-gradient(180deg, rgba(1,0,107,1) 0%, rgba(0,2,17,1) 0%, rgba(3,0,38,1) 17%, rgba(6,0,46,1) 100%);
     padding:100px 0;
     text-align: center;
-    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -125,26 +195,32 @@ $color3:#67568c;
                 justify-content: center;
                 flex-wrap: wrap;
                 margin: 30px 60px;
-                .box{
-                    background-color: #eeeeee;
-                    width: 23.1%;
-                    box-sizing: border-box;
-                    margin: 20px 4px;
-                    padding: 50px 10px;
-                    
-
+                .projeto{
+                    text-align: left;
+                    color: white;
+                    width: 30%;
+                    margin-right: 30px;
+                    margin-bottom: 30px;
+                    img{
+                        width:100%;
+                        margin-bottom: 10px;
                     }
-                .barber-shop{
-                    padding: 0;
-                    margin: 10px;
-                    background: none;
-                    a{
-                        text-decoration: none;
+                    h3,p{
+                        margin-bottom: 10px;
                     }
-                    img{width: 100%;
+                    a{  
+                       
                         
-                }    
+                        img{                
+                            padding: 10px 20px;
+                            margin-top: 15px;
+                            width: 120px;
+                            border: 2px solid;
+                            border-image: linear-gradient(227.91deg,#106AF2 0%, #00E9FF 100%) 1;
+                        }
+                    }
                 }
+                  
             }
             
         }
@@ -337,7 +413,6 @@ $color3:#67568c;
         }
     }
 }
-
 
 /*FOOTER*/
 footer{
