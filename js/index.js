@@ -112,3 +112,55 @@ office365.addEventListener('mouseout', sairOffice365);  // Novo evento
 azure.addEventListener('mouseenter', entrarAzure);  // Novo evento
 azure.addEventListener('mouseout', sairAzure);  // Novo evento
 
+// DECLARANDO FUNCTIONS
+
+// Funções para os novos eventos
+function entrarHelpdesk() {
+  evento.innerText = 'HelpDesk é um serviço de suporte ao usuário, oferecendo soluções para problemas técnicos e dúvidas sobre sistemas e software.';
+}
+function sairHelpdesk() {
+  evento.innerText = "passe o cursor no card para ler";
+}
+function entrarKaspersky() {
+  evento.innerText = 'Kaspersky é um software de segurança que oferece proteção contra vírus, malware, ransomware e outras ameaças cibernéticas.';
+}
+function sairKaspersky() {
+  evento.innerText = "passe o cursor no card para ler";
+}
+function entrarCrowdstrike() {
+  evento.innerText = 'CrowdStrike é uma plataforma de segurança cibernética baseada em nuvem, focada em proteger endpoints e fornecer detecção de ameaças em tempo real.';
+}
+function sairCrowdstrike() {
+  evento.innerText = "passe o cursor no card para ler";
+}
+function entrarZohoassist() {
+  evento.innerText = 'Zoho Assist é uma ferramenta de suporte remoto que permite conectar-se a computadores e fornecer assistência técnica à distância.';
+}
+function sairZohoassist() {
+  evento.innerText = "passe o cursor no card para ler";
+}
+function entrarManagementengine() {
+  evento.innerText = 'ManagementEngine é uma solução de gestão de TI que oferece automação de processos, gerenciamento de ativos e monitoramento de infraestrutura.';
+}
+function sairManagementengine() {
+  evento.innerText = "passe o cursor no card para ler";
+}
+function entrarActivedirectory() {
+  evento.innerText = 'Active Directory é um serviço de diretório que facilita a gestão de usuários, computadores e outros recursos em redes corporativas.';
+}
+function sairActivedirectory() {
+  evento.innerText = "passe o cursor no card para ler";
+}
+function entrarOffice365() {
+  evento.innerText = 'Office 365 é uma suíte de aplicativos de produtividade da Microsoft, incluindo Word, Excel, PowerPoint, e serviços como o OneDrive e Outlook.';
+}
+function sairOffice365() {
+  evento.innerText = "passe o cursor no card para ler";
+}
+function entrarAzure() {
+  evento.innerText = 'Azure é uma plataforma de nuvem da Microsoft que oferece serviços de computação, armazenamento, redes e muito mais, com foco em soluções empresariais.';
+}
+function sairAzure() {
+  evento.innerText = "passe o cursor no card para ler";
+}
+
