@@ -57,16 +57,6 @@ ScrollReveal().reveal('.sociais-scroll6', { delay: 700 });
 // DECLARANDO AS VARIÁVEIS DOS BOXES
 let evento = document.querySelector('.evento');
 
-// NOVAS VARIÁVEIS PARA OS NOVOS ELEMENTOS
-let helpdesk = document.querySelector('#helpdesk');
-let kaspersky = document.querySelector('#kaspersky');
-let crowdstrike = document.querySelector('#crowdstrike');
-let zohoassist = document.querySelector('#zohoassist');
-let managementengine = document.querySelector('#managementengine');
-let activedirectory = document.querySelector('#activedirectory');
-let office365 = document.querySelector('#office365');
-let azure = document.querySelector('#azure');
-
 //ADICIONANDO EVENTOS
 html.addEventListener('mouseenter', entrarHtml)
 html.addEventListener('mouseout', sairHtml)
