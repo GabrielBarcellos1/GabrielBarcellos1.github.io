@@ -55,14 +55,6 @@ ScrollReveal().reveal('.sociais-scroll5', { delay: 600 });
 ScrollReveal().reveal('.sociais-scroll6', { delay: 700 });
 
 // DECLARANDO AS VARIÁVEIS DOS BOXES
-let html = document.querySelector('.html');
-let css = document.querySelector('.css');
-let js = document.querySelector('.js');
-let c = document.querySelector('.c');
-let sass = document.querySelector('.sass');
-let python = document.querySelector('.python');
-let material = document.querySelector('.material');
-let next = document.querySelector('.next');
 let evento = document.querySelector('.evento');
 
 // NOVAS VARIÁVEIS PARA OS NOVOS ELEMENTOS
@@ -76,89 +68,26 @@ let office365 = document.querySelector('#office365');
 let azure = document.querySelector('#azure');
 
 // ADICIONANDO EVENTOS
-html.addEventListener('mouseenter', entrarHtml);
-html.addEventListener('mouseout', sairHtml);
-css.addEventListener('mouseenter', entrarCss);
-css.addEventListener('mouseout', sairCss);
-js.addEventListener('mouseenter', entrarJs);
-js.addEventListener('mouseout', sairJs);
-c.addEventListener('mouseenter', entrarC);
-c.addEventListener('mouseout', sairC);
-sass.addEventListener('mouseenter', entrarSass);
-sass.addEventListener('mouseout', sairSass);
-python.addEventListener('mouseenter', entrarPython);
-python.addEventListener('mouseout', sairPython);
-material.addEventListener('mouseenter', entrarMaterial);
-material.addEventListener('mouseout', sairMaterial);
-next.addEventListener('mouseenter', entrarNext);
-next.addEventListener('mouseout', sairNext);
-helpdesk.addEventListener('mouseenter', entrarHelpdesk);  // Novo evento
-helpdesk.addEventListener('mouseout', sairHelpdesk);  // Novo evento
-kaspersky.addEventListener('mouseenter', entrarKaspersky);  // Novo evento
-kaspersky.addEventListener('mouseout', sairKaspersky);  // Novo evento
-crowdstrike.addEventListener('mouseenter', entrarCrowdstrike);  // Novo evento
-crowdstrike.addEventListener('mouseout', sairCrowdstrike);  // Novo evento
-zohoassist.addEventListener('mouseenter', entrarZohoassist);  // Novo evento
-zohoassist.addEventListener('mouseout', sairZohoassist);  // Novo evento
-managementengine.addEventListener('mouseenter', entrarManagementengine);  // Novo evento
-managementengine.addEventListener('mouseout', sairManagementengine);  // Novo evento
-activedirectory.addEventListener('mouseenter', entrarActivedirectory);  // Novo evento
-activedirectory.addEventListener('mouseout', sairActivedirectory);  // Novo evento
-office365.addEventListener('mouseenter', entrarOffice365);  // Novo evento
-office365.addEventListener('mouseout', sairOffice365);  // Novo evento
-azure.addEventListener('mouseenter', entrarAzure);  // Novo evento
-azure.addEventListener('mouseout', sairAzure);  // Novo evento
+helpdesk.addEventListener('mouseenter', () => evento.innerText = 'HelpDesk é um serviço de suporte ao usuário, oferecendo soluções para problemas técnicos e dúvidas sobre sistemas e software.');
+helpdesk.addEventListener('mouseout', () => evento.innerText = "Passe o cursor no card para ler");
 
-// DECLARANDO FUNCTIONS
+kaspersky.addEventListener('mouseenter', () => evento.innerText = 'Kaspersky é um software de segurança que oferece proteção contra vírus, malware, ransomware e outras ameaças cibernéticas.');
+kaspersky.addEventListener('mouseout', () => evento.innerText = "Passe o cursor no card para ler");
 
-// Funções para os novos eventos
-function entrarHelpdesk() {
-  evento.innerText = 'HelpDesk é um serviço de suporte ao usuário, oferecendo soluções para problemas técnicos e dúvidas sobre sistemas e software.';
-}
-function sairHelpdesk() {
-  evento.innerText = "passe o cursor no card para ler";
-}
-function entrarKaspersky() {
-  evento.innerText = 'Kaspersky é um software de segurança que oferece proteção contra vírus, malware, ransomware e outras ameaças cibernéticas.';
-}
-function sairKaspersky() {
-  evento.innerText = "passe o cursor no card para ler";
-}
-function entrarCrowdstrike() {
-  evento.innerText = 'CrowdStrike é uma plataforma de segurança cibernética baseada em nuvem, focada em proteger endpoints e fornecer detecção de ameaças em tempo real.';
-}
-function sairCrowdstrike() {
-  evento.innerText = "passe o cursor no card para ler";
-}
-function entrarZohoassist() {
-  evento.innerText = 'Zoho Assist é uma ferramenta de suporte remoto que permite conectar-se a computadores e fornecer assistência técnica à distância.';
-}
-function sairZohoassist() {
-  evento.innerText = "passe o cursor no card para ler";
-}
-function entrarManagementengine() {
-  evento.innerText = 'ManagementEngine é uma solução de gestão de TI que oferece automação de processos, gerenciamento de ativos e monitoramento de infraestrutura.';
-}
-function sairManagementengine() {
-  evento.innerText = "passe o cursor no card para ler";
-}
-function entrarActivedirectory() {
-  evento.innerText = 'Active Directory é um serviço de diretório que facilita a gestão de usuários, computadores e outros recursos em redes corporativas.';
-}
-function sairActivedirectory() {
-  evento.innerText = "passe o cursor no card para ler";
-}
-function entrarOffice365() {
-  evento.innerText = 'Office 365 é uma suíte de aplicativos de produtividade da Microsoft, incluindo Word, Excel, PowerPoint, e serviços como o OneDrive e Outlook.';
-}
-function sairOffice365() {
-  evento.innerText = "passe o cursor no card para ler";
-}
-function entrarAzure() {
-  evento.innerText = 'Azure é uma plataforma de nuvem da Microsoft que oferece serviços de computação, armazenamento, redes e muito mais, com foco em soluções empresariais.';
-}
-function sairAzure() {
-  evento.innerText = "passe o cursor no card para ler";
-}
+crowdstrike.addEventListener('mouseenter', () => evento.innerText = 'CrowdStrike é uma plataforma de segurança cibernética baseada em nuvem, focada em proteger endpoints e fornecer detecção de ameaças em tempo real.');
+crowdstrike.addEventListener('mouseout', () => evento.innerText = "Passe o cursor no card para ler");
 
+zohoassist.addEventListener('mouseenter', () => evento.innerText = 'Zoho Assist é uma ferramenta de suporte remoto que permite conectar-se a computadores e fornecer assistência técnica à distância.');
+zohoassist.addEventListener('mouseout', () => evento.innerText = "Passe o cursor no card para ler");
 
+managementengine.addEventListener('mouseenter', () => evento.innerText = 'ManagementEngine é uma solução de gestão de TI que oferece automação de processos, gerenciamento de ativos e monitoramento de infraestrutura.');
+managementengine.addEventListener('mouseout', () => evento.innerText = "Passe o cursor no card para ler");
+
+activedirectory.addEventListener('mouseenter', () => evento.innerText = 'Active Directory é um serviço de diretório que facilita a gestão de usuários, computadores e outros recursos em redes corporativas.');
+activedirectory.addEventListener('mouseout', () => evento.innerText = "Passe o cursor no card para ler");
+
+office365.addEventListener('mouseenter', () => evento.innerText = 'Office 365 é uma suíte de aplicativos de produtividade da Microsoft, incluindo Word, Excel, PowerPoint, e serviços como o OneDrive e Outlook.');
+office365.addEventListener('mouseout', () => evento.innerText = "Passe o cursor no card para ler");
+
+azure.addEventListener('mouseenter', () => evento.innerText = 'Azure é uma plataforma de nuvem da Microsoft que oferece serviços de computação, armazenamento, redes e muito mais, com foco em soluções empresariais.');
+azure.addEventListener('mouseout', () => evento.innerText = "Passe o cursor no card para ler");
