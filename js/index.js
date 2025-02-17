@@ -26,8 +26,14 @@ material.addEventListener('mouseenter', entrarMaterial)
 material.addEventListener('mouseout', sairMaterial)
 next.addEventListener('mouseenter', entrarNext)
 next.addEventListener('mouseout', sairNext)
+teste1.addEventListener('mouseenter', entrarTeste1)
+teste1.addEventListener('mouseout', sairTeste1)
 
 //DECLARANDO FUNCTIONS
+
+function teste1(){
+evento.innerText = 'teste html'
+}
 function entrarHtml(){
 evento.innerText = 'O HelpDesk é responsável por fornecer suporte técnico e solucionar problemas de hardware e software para os usuários finais, garantindo a continuidade do funcionamento das operações de TI.'
 }
