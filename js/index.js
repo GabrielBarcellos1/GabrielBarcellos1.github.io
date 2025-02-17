@@ -9,26 +9,6 @@ const material = document.querySelector('.material');
 const next = document.querySelector('.next');
 const evento = document.querySelector('.evento');
 
-// Adicionar eventos
-html.addEventListener('mouseenter', entrarHtml);
-html.addEventListener('mouseout', sairHtml);
-css.addEventListener('mouseenter', entrarCss);
-css.addEventListener('mouseout', sairCss);
-js.addEventListener('mouseenter', entrarJs);
-js.addEventListener('mouseout', sairJs);
-c.addEventListener('mouseenter', entrarC);
-c.addEventListener('mouseout', sairC);
-sass.addEventListener('mouseenter', entrarSass);
-sass.addEventListener('mouseout', sairSass);
-python.addEventListener('mouseenter', entrarPython);
-python.addEventListener('mouseout', sairPython);
-material.addEventListener('mouseenter', entrarMaterial);
-material.addEventListener('mouseout', sairMaterial);
-next.addEventListener('mouseenter', entrarNext);
-next.addEventListener('mouseout', sairNext);
-
-// Funções de texto
-
 //ADICIONANDO EVENTOS
 html.addEventListener('mouseenter', entrarHtml)
 html.addEventListener('mouseout', sairHtml)
