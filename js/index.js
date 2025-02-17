@@ -57,147 +57,114 @@ ScrollReveal().reveal('.sociais-scroll6', { delay: 700 });
 
 
 
-//EVENTOS DE MOUSE
+// DECLARANDO AS VARIÁVEIS DOS BOXES
+let html = document.querySelector('.html');
+let css = document.querySelector('.css');
+let js = document.querySelector('.js');
+let c = document.querySelector('.c');
+let sass = document.querySelector('.sass');
+let python = document.querySelector('.python');
+let material = document.querySelector('.material');
+let next = document.querySelector('.next');
+let evento = document.querySelector('.evento');
 
-// DECLARANDO AS VARIASVEIS DOS BOXES
-let  html = document.querySelector('.html') 
-let css = document.querySelector('.css')
-let js = document.querySelector('.js')
-let c = document.querySelector('.c')
-let sass = document.querySelector('.sass')
-let python = document.querySelector('.python')
-let material = document.querySelector('.material')
-let next = document.querySelector('.next')
-let evento = document.querySelector('.evento')
+// NOVAS VARIÁVEIS PARA OS NOVOS ELEMENTOS
+let helpdesk = document.querySelector('#helpdesk');
+let kaspersky = document.querySelector('#kaspersky');
+let crowdstrike = document.querySelector('#crowdstrike');
+let zohoassist = document.querySelector('#zohoassist');
+let managementengine = document.querySelector('#managementengine');
+let activedirectory = document.querySelector('#activedirectory');
+let office365 = document.querySelector('#office365');
+let azure = document.querySelector('#azure');
 
 // ADICIONANDO EVENTOS
-html.addEventListener('mouseenter', entrarHtml)
-html.addEventListener('mouseout', sairHtml)
-css.addEventListener('mouseenter', entrarCss)
-css.addEventListener('mouseout', sairCss)
-js.addEventListener('mouseenter', entrarJs)
-js.addEventListener('mouseout', sairJs)
-c.addEventListener('mouseenter', entrarC)
-c.addEventListener('mouseout', sairC)
-sass.addEventListener('mouseenter', entrarSass)
-sass.addEventListener('mouseout', sairSass)
-python.addEventListener('mouseenter', entrarPython)
-python.addEventListener('mouseout', sairPython)
-material.addEventListener('mouseenter', entrarMaterial)
-material.addEventListener('mouseout', sairMaterial)
-next.addEventListener('mouseenter', entrarNext)
-next.addEventListener('mouseout', sairNext)
-helpdesk.addEventListener('mouseenter', entrarHelpdesk)  // Novo evento
-helpdesk.addEventListener('mouseout', sairHelpdesk)  // Novo evento
-kaspersky.addEventListener('mouseenter', entrarKaspersky)  // Novo evento
-kaspersky.addEventListener('mouseout', sairKaspersky)  // Novo evento
-crowdstrike.addEventListener('mouseenter', entrarCrowdstrike)  // Novo evento
-crowdstrike.addEventListener('mouseout', sairCrowdstrike)  // Novo evento
-zohoassist.addEventListener('mouseenter', entrarZohoassist)  // Novo evento
-zohoassist.addEventListener('mouseout', sairZohoassist)  // Novo evento
-managementengine.addEventListener('mouseenter', entrarManagementengine)  // Novo evento
-managementengine.addEventListener('mouseout', sairManagementengine)  // Novo evento
-activedirectory.addEventListener('mouseenter', entrarActivedirectory)  // Novo evento
-activedirectory.addEventListener('mouseout', sairActivedirectory)  // Novo evento
-office365.addEventListener('mouseenter', entrarOffice365)  // Novo evento
-office365.addEventListener('mouseout', sairOffice365)  // Novo evento
-azure.addEventListener('mouseenter', entrarAzure)  // Novo evento
-azure.addEventListener('mouseout', sairAzure)  // Novo evento
+html.addEventListener('mouseenter', entrarHtml);
+html.addEventListener('mouseout', sairHtml);
+css.addEventListener('mouseenter', entrarCss);
+css.addEventListener('mouseout', sairCss);
+js.addEventListener('mouseenter', entrarJs);
+js.addEventListener('mouseout', sairJs);
+c.addEventListener('mouseenter', entrarC);
+c.addEventListener('mouseout', sairC);
+sass.addEventListener('mouseenter', entrarSass);
+sass.addEventListener('mouseout', sairSass);
+python.addEventListener('mouseenter', entrarPython);
+python.addEventListener('mouseout', sairPython);
+material.addEventListener('mouseenter', entrarMaterial);
+material.addEventListener('mouseout', sairMaterial);
+next.addEventListener('mouseenter', entrarNext);
+next.addEventListener('mouseout', sairNext);
+helpdesk.addEventListener('mouseenter', entrarHelpdesk);  // Novo evento
+helpdesk.addEventListener('mouseout', sairHelpdesk);  // Novo evento
+kaspersky.addEventListener('mouseenter', entrarKaspersky);  // Novo evento
+kaspersky.addEventListener('mouseout', sairKaspersky);  // Novo evento
+crowdstrike.addEventListener('mouseenter', entrarCrowdstrike);  // Novo evento
+crowdstrike.addEventListener('mouseout', sairCrowdstrike);  // Novo evento
+zohoassist.addEventListener('mouseenter', entrarZohoassist);  // Novo evento
+zohoassist.addEventListener('mouseout', sairZohoassist);  // Novo evento
+managementengine.addEventListener('mouseenter', entrarManagementengine);  // Novo evento
+managementengine.addEventListener('mouseout', sairManagementengine);  // Novo evento
+activedirectory.addEventListener('mouseenter', entrarActivedirectory);  // Novo evento
+activedirectory.addEventListener('mouseout', sairActivedirectory);  // Novo evento
+office365.addEventListener('mouseenter', entrarOffice365);  // Novo evento
+office365.addEventListener('mouseout', sairOffice365);  // Novo evento
+azure.addEventListener('mouseenter', entrarAzure);  // Novo evento
+azure.addEventListener('mouseout', sairAzure);  // Novo evento
 
 // DECLARANDO FUNCTIONS
-function entrarHtml(){
-  evento.innerText = 'O HTML é a base de todo sistema web, é com ele que adicionamos em nossa página os Textos, Imagens, Formulários, Vídeos e etc.'
+function entrarHtml() {
+  evento.innerText = 'O HTML é a base de todo sistema web, é com ele que adicionamos em nossa página os Textos, Imagens, Formulários, Vídeos e etc.';
 }
-function sairHtml(){
-  evento.innerText = "passe o cursor no card para ler"
+function sairHtml() {
+  evento.innerText = "passe o cursor no card para ler";
 }
-function entrarCss(){
-  evento.innerText = 'Com o CSS adicionamos estilos em nossa página: Cores, Tamanhos, Posicionamentos Sombras, Grids, Efeitos, Animações e etc.'
+// Funções para os novos eventos
+function entrarHelpdesk() {
+  evento.innerText = 'HelpDesk é um serviço de suporte ao usuário, oferecendo soluções para problemas técnicos e dúvidas sobre sistemas e software.';
 }
-function sairCss(){
-  evento.innerText = "passe o cursor no card para ler"
+function sairHelpdesk() {
+  evento.innerText = "passe o cursor no card para ler";
 }
-function entrarJs(){
-  evento.innerText = 'Com o Javascript as possibilidades são imensas, validar formularios, processar dados, manipular elementos na tela, consultar APIs, etc.'
+function entrarKaspersky() {
+  evento.innerText = 'Kaspersky é um software de segurança que oferece proteção contra vírus, malware, ransomware e outras ameaças cibernéticas.';
 }
-function sairJs(){
-  evento.innerText = "passe o cursor no card para ler"
+function sairKaspersky() {
+  evento.innerText = "passe o cursor no card para ler";
 }
-function entrarC(){
-  evento.innerText = 'O React é uma biblioteca Javascript desenvolvida pelos engenheiros do Facebook com o foco em criar interfaces de usuário. É atualmente a biblioteca mais requisitada no mercado.'
+function entrarCrowdstrike() {
+  evento.innerText = 'CrowdStrike é uma plataforma de segurança cibernética baseada em nuvem, focada em proteger endpoints e fornecer detecção de ameaças em tempo real.';
 }
-function sairC(){
-  evento.innerText = "passe o cursor no card para ler"
+function sairCrowdstrike() {
+  evento.innerText = "passe o cursor no card para ler";
 }
-function entrarSass(){
-  evento.innerText = 'O SASS é uma linguagem de extensão ao CSS, com ele vamos simplificar a escrita de CSS, além de ganhar mais dinamismo em nossas folhas de estil.'
+function entrarZohoassist() {
+  evento.innerText = 'Zoho Assist é uma ferramenta de suporte remoto que permite conectar-se a computadores e fornecer assistência técnica à distância.';
 }
-function sairSass(){
-  evento.innerText = "passe o cursor no card para ler"
+function sairZohoassist() {
+  evento.innerText = "passe o cursor no card para ler";
 }
-function entrarPython(){
-  evento.innerText = 'Redux é uma biblioteca JavaScript para gerenciar o estado da aplicação é similar e inspirada pela arquitetura Flux do Facebook, ela pode ser utilizada com o React ou outras bibliotecas JavaScript.'
+function entrarManagementengine() {
+  evento.innerText = 'ManagementEngine é uma solução de gestão de TI que oferece automação de processos, gerenciamento de ativos e monitoramento de infraestrutura.';
 }
-function sairPython(){
-  evento.innerText = "passe o cursor no card para ler"
+function sairManagementengine() {
+  evento.innerText = "passe o cursor no card para ler";
 }
-function entrarMaterial(){
-  evento.innerText = 'Biblioteca de componentes React para um desenvolvimento ágil e fácil. O Material.ui é usado por grande empresas como Nasa, Walmart, Netflix, Amazon, Spotify, entre outras.'
+function entrarActivedirectory() {
+  evento.innerText = 'Active Directory é um serviço de diretório que facilita a gestão de usuários, computadores e outros recursos em redes corporativas.';
 }
-function sairMaterial(){
-  evento.innerText = "passe o cursor no card para ler"
+function sairActivedirectory() {
+  evento.innerText = "passe o cursor no card para ler";
 }
-function entrarNext(){
-  evento.innerText = 'O Next.js é o framework mais adotado pela comunidade do React. O seu maior objetivo é tornar nossa aplicação React mais performática e permitir a indexação do conteúdo da página pelos motores de busca.'
+function entrarOffice365() {
+  evento.innerText = 'Office 365 é uma suíte de aplicativos de produtividade da Microsoft, incluindo Word, Excel, PowerPoint, e serviços como o OneDrive e Outlook.';
 }
-function sairNext(){
-  evento.innerText = "passe o cursor no card para ler"
+function sairOffice365() {
+  evento.innerText = "passe o cursor no card para ler";
 }
-function entrarHelpdesk(){
-  evento.innerText = 'HelpDesk é um serviço de suporte ao usuário, oferecendo soluções para problemas técnicos e dúvidas sobre sistemas e software.'
+function entrarAzure() {
+  evento.innerText = 'Azure é uma plataforma de nuvem da Microsoft que oferece serviços de computação, armazenamento, redes e muito mais, com foco em soluções empresariais.';
 }
-function sairHelpdesk(){
-  evento.innerText = "passe o cursor no card para ler"
-}
-function entrarKaspersky(){
-  evento.innerText = 'Kaspersky é um software de segurança que oferece proteção contra vírus, malware, ransomware e outras ameaças cibernéticas.'
-}
-function sairKaspersky(){
-  evento.innerText = "passe o cursor no card para ler"
-}
-function entrarCrowdstrike(){
-  evento.innerText = 'CrowdStrike é uma plataforma de segurança cibernética baseada em nuvem, focada em proteger endpoints e fornecer detecção de ameaças em tempo real.'
-}
-function sairCrowdstrike(){
-  evento.innerText = "passe o cursor no card para ler"
-}
-function entrarZohoassist(){
-  evento.innerText = 'Zoho Assist é uma ferramenta de suporte remoto que permite conectar-se a computadores e fornecer assistência técnica à distância.'
-}
-function sairZohoassist(){
-  evento.innerText = "passe o cursor no card para ler"
-}
-function entrarManagementengine(){
-  evento.innerText = 'ManagementEngine é uma solução de gestão de TI que oferece automação de processos, gerenciamento de ativos e monitoramento de infraestrutura.'
-}
-function sairManagementengine(){
-  evento.innerText = "passe o cursor no card para ler"
-}
-function entrarActivedirectory(){
-  evento.innerText = 'Active Directory é um serviço de diretório que facilita a gestão de usuários, computadores e outros recursos em redes corporativas.'
-}
-function sairActivedirectory(){
-  evento.innerText = "passe o cursor no card para ler"
-}
-function entrarOffice365(){
-  evento.innerText = 'Office 365 é uma suíte de aplicativos de produtividade da Microsoft, incluindo Word, Excel, PowerPoint, e serviços como o OneDrive e Outlook.'
-}
-function sairOffice365(){
-  evento.innerText = "passe o cursor no card para ler"
-}
-function entrarAzure(){
-  evento.innerText = 'Azure é uma plataforma de nuvem da Microsoft que oferece serviços de computação, armazenamento, redes e muito mais, com foco em soluções empresariais.'
-}
-function sairAzure(){
-  evento.innerText = "passe o cursor no card para ler"
+function sairAzure() {
+  evento.innerText = "passe o cursor no card para ler";
 }
