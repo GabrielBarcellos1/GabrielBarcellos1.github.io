@@ -28,51 +28,52 @@ next.addEventListener('mouseenter', entrarNext);
 next.addEventListener('mouseout', sairNext);
 
 // Funções de texto
-function entrarHtml() {
-    evento.innerText = 'O HTML é a base de todo sistema web, é com ele que adicionamos em nossa página os Textos, Imagens, Formulários, Vídeos e etc.';
+  evento.innerText = "passe o cursor no card para ler"
 }
-function sairHtml() {
-    evento.innerText = 'Passe o cursor no card para ler';
+function entrarHelpdesk(){
+  evento.innerText = 'HelpDesk é um serviço de suporte ao usuário, oferecendo soluções para problemas técnicos e dúvidas sobre sistemas e software.'
 }
-function entrarCss() {
-    evento.innerText = 'Com o CSS adicionamos estilos em nossa página: Cores, Tamanhos, Posicionamentos, Sombras, Grids, Efeitos, Animações, etc.';
+function sairHelpdesk(){
+  evento.innerText = "passe o cursor no card para ler"
 }
-function sairCss() {
-    evento.innerText = 'Passe o cursor no card para ler';
+function entrarKaspersky(){
+  evento.innerText = 'Kaspersky é um software de segurança que oferece proteção contra vírus, malware, ransomware e outras ameaças cibernéticas.'
 }
-function entrarJs() {
-    evento.innerText = 'O JavaScript torna o site dinâmico. Ele permite que a página interaja com o usuário, alterando conteúdo, validando formulários, realizando animações, etc.';
+function sairKaspersky(){
+  evento.innerText = "passe o cursor no card para ler"
 }
-function sairJs() {
-    evento.innerText = 'Passe o cursor no card para ler';
+function entrarCrowdstrike(){
+  evento.innerText = 'CrowdStrike é uma plataforma de segurança cibernética baseada em nuvem, focada em proteger endpoints e fornecer detecção de ameaças em tempo real.'
 }
-function entrarC() {
-    evento.innerText = 'O C é uma linguagem de programação amplamente utilizada no desenvolvimento de software, sistemas embarcados e na criação de aplicativos de baixo nível.';
+function sairCrowdstrike(){
+  evento.innerText = "passe o cursor no card para ler"
 }
-function sairC() {
-    evento.innerText = 'Passe o cursor no card para ler';
+function entrarZohoassist(){
+  evento.innerText = 'Zoho Assist é uma ferramenta de suporte remoto que permite conectar-se a computadores e fornecer assistência técnica à distância.'
 }
-function entrarSass() {
-    evento.innerText = 'O Sass é um pré-processador CSS que facilita a criação de estilos reutilizáveis e organizados com variáveis, mixins, funções e aninhamento de seletores.';
+function sairZohoassist(){
+  evento.innerText = "passe o cursor no card para ler"
 }
-function sairSass() {
-    evento.innerText = 'Passe o cursor no card para ler';
+function entrarManagementengine(){
+  evento.innerText = 'ManagementEngine é uma solução de gestão de TI que oferece automação de processos, gerenciamento de ativos e monitoramento de infraestrutura.'
 }
-function entrarPython() {
-    evento.innerText = 'O Python é uma linguagem de programação de alto nível, conhecida por sua simplicidade e legibilidade. É amplamente usada no desenvolvimento web, automação, inteligência artificial e análise de dados.';
+function sairManagementengine(){
+  evento.innerText = "passe o cursor no card para ler"
 }
-function sairPython() {
-    evento.innerText = 'Passe o cursor no card para ler';
+function entrarActivedirectory(){
+  evento.innerText = 'Active Directory é um serviço de diretório que facilita a gestão de usuários, computadores e outros recursos em redes corporativas.'
 }
-function entrarMaterial() {
-    evento.innerText = 'O Material Design é um sistema de design criado pelo Google que proporciona uma experiência consistente e intuitiva em todos os dispositivos e plataformas.';
+function sairActivedirectory(){
+  evento.innerText = "passe o cursor no card para ler"
 }
-function sairMaterial() {
-    evento.innerText = 'Passe o cursor no card para ler';
+function entrarOffice365(){
+  evento.innerText = 'Office 365 é uma suíte de aplicativos de produtividade da Microsoft, incluindo Word, Excel, PowerPoint, e serviços como o OneDrive e Outlook.'
 }
-function entrarNext() {
-    evento.innerText = 'O Next.js é um framework baseado no React que permite o desenvolvimento de aplicações web com renderização do lado do servidor, geração de sites estáticos e recursos como roteamento dinâmico.';
+function sairOffice365(){
+  evento.innerText = "passe o cursor no card para ler"
 }
-function sairNext() {
-    evento.innerText = 'Passe o cursor no card para ler';
+function entrarAzure(){
+  evento.innerText = 'Azure é uma plataforma de nuvem da Microsoft que oferece serviços de computação, armazenamento, redes e muito mais, com foco em soluções empresariais.'
 }
+function sairAzure(){
+  evento.innerText = "passe o cursor no card para ler"
