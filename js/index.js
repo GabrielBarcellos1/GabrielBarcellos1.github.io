@@ -54,9 +54,6 @@ ScrollReveal().reveal('.sociais-scroll4', { delay: 500 });
 ScrollReveal().reveal('.sociais-scroll5', { delay: 600 });
 ScrollReveal().reveal('.sociais-scroll6', { delay: 700 });
 
-
-
-
 // DECLARANDO AS VARIÁVEIS DOS BOXES
 let html = document.querySelector('.html');
 let css = document.querySelector('.css');
@@ -163,4 +160,5 @@ function entrarAzure() {
 function sairAzure() {
   evento.innerText = "passe o cursor no card para ler";
 }
+
 
