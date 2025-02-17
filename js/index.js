@@ -55,7 +55,7 @@ function sairHtml(){
 evento.innerText = "passe o cursor no card para ler"
 }
 function entrarCss(){
-evento.innerText = 'Com o CSS adicionamos estilos em nossa página: Cores, Tamanhos, Posicionamentos Sombras, Grids, Efeitos, Animações e etc.'
+evento.innerText = '11111111111111111'
 }
 function sairCss(){
 evento.innerText = "passe o cursor no card para ler"
