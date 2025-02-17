@@ -49,7 +49,7 @@ next.addEventListener('mouseout', sairNext)
 
 //DECLARANDO FUNCTIONS
 function entrarHtml(){
-evento.innerText = 'O HTML é a base de todo sistema web, é com ele que adicionamos em nossa página os Textos, Imagens, Formulários, Vídeos e etc.'
+evento.innerText = 'teste123'
 }
 function sairHtml(){
 evento.innerText = "passe o cursor no card para ler"
